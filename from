@@ -1,0 +1,35 @@
+import React, { Componen } from 'react';
+import{
+ StyleSheet,
+ Text,
+ View,
+ Textinput,
+ TouchableOpacity
+ } from 'react-native';
+ export default class logo extend Component <{}> {
+  render(){
+   return(
+    <View style = {style.container}>
+    <Textinput style = {style.inputBox}
+    undelineColorAndroid='rgba(0,0,0,0,)
+    placeholder = "Email"
+    placeholder = "#ffffff"
+    selectioncolor = "#fff"
+    KeyboardType = "email-addres"
+    onSubmitEditing = {()=> this.password.focus()}
+    />
+    <Textinput style = {style.inputBox}
+    underlineColorAndroid = 'rgba(0,0,0,0)'
+    placeholder = "Password"
+    secureTextEntry = {true}
+    placeholderTextColor = "#ffffff"
+    ref={(input) => this.password = input}
+    />
+    <TauchableOpacity style = {style.button}>
+    </Text style = {style.buttonText}> {this.props.type}</Text>
+
+    </View>
+    
+    )
+  }
+}  
