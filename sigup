@@ -1,0 +1,29 @@
+import React, {Component} from 'react';
+import{
+  StyleSheet, Text,View,StatusBar,TauchableOpacity
+} from 'react-native';
+
+import Logo from '../component/Logo';
+import From from '../component/From'; 
+
+import {action} from 'react-native-ri=rounter-fluk';
+
+export default class Signup extends Component<{}>{
+  goBack();
+}
+render(){
+ retrun(
+     <View style={style.container}>
+     <Logo/>
+     <From type="signup"/>
+     <View style={style.signupTextcont}>
+     <Text sytle={style.signupText}>Anda berhasil Login?</text>
+     <TauchableOpacity onPres={this.goBack}>
+     <Text style={sytle.signupButrton}>Sign in</Text></TauchableOpacity>
+     </View></View>
+          )
+       }
+  )
+
+
+      
